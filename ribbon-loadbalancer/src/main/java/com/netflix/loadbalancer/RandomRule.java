@@ -45,6 +45,7 @@ public class RandomRule extends AbstractLoadBalancerRule {
             if (Thread.interrupted()) {
                 return null;
             }
+            //                          可达服务
             List<Server> upList = lb.getReachableServers();
             List<Server> allList = lb.getAllServers();
 
